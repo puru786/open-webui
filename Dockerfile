@@ -12,7 +12,7 @@ ARG USE_CUDA_VER=cu121
 ARG USE_EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
 
 ######## WebUI frontend ########
-FROM --platform=$BUILDPLATFORM node:21-alpine3.19 as build
+FROM node:21-alpine3.19 as build
 
 WORKDIR /app
 
